@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  box-sizing: border-box; 
+}
+
+html, 
+body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  color: #fff; 
+  line-height: 1.4em;
+  text-align: center; 
+  background-color: #BF3EFF; 
+}
+
+.wrapper {
+  width: 100%; 
+  padding: 0 10%; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+h1, 
+h2, 
+h3 {
+ font-family: 'Rock Salt', cursive;
+ color: #eaeaea;
+ padding-bottom: 25px; 
+}
+
+h1 {
+  font-size: 6em;
+}
+
+h2 {
+  font-size: 3em; 
+}
+
+h3 {
+  font-size: 2em; 
+}
+
+p {
+  font-size: 1.2em; 
+}
+
+header {
+  height: 415px;
+  display: flex; 
+  justify-content:center;
+  align-items:center; 
+  background-image: url(../images/awesomefest.jpg);
+  background-attachment: fixed;
+  text-shadow: 2px 2px 4px #000000;
+}
+header > div > h1, h2, h3{
+  color: #FEA308;
+}
+
+.images {
+  display:flex;
+}
+
+.images div {
+  width: 50%; 
+}
+body > div > main > section:nth-child(1) > section > div:nth-child(1) > img{
+  box-shadow: 10px 10px 15px black;
+}
+body > div > main > section:nth-child(1) > section > div:nth-child(2) > img{
+  height: 426px;
+  width: 426px;
+  box-shadow: 10px 10px 15px black;
+}
+
+/*main {
+  padding-top: 60px 0; 
+}*/
+fieldset{
+ border: none;
+  padding: 15px 0;
+  margin-top: 15px;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  border: 3px solid #333;
+  border-collapse: collapse;
+  background-color: #1d1c1c;
+}
+
+
+th,
+td {
+  padding: 20px;
+}
+
+/* allows for different column widths */
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+} 
+
+thead th:nth-child(3) {
+  width: 35%;
+}
+
+thead th:nth-child(4) {
+  width: 15%;
+}
+
+
+/* zebra striping */
+tbody tr:nth-child(even){
+background-color: #eaeaea;
+color: black;
+}
+
+tbody tr:nth-child(odd){
+background-color: #fff;
+color: black;
+}
+ 
+
+tr td:nth-child(4) {
+  text-align: center;
+}
+form {
+background: rgba(107, 13, 154, 0.80);
+padding: 30px;
+border-radius: 5px; /*change border size*/
+display: flex;
+box-shadow: 0 0 10px rgba(0,0,0,0.72);
+flex-direction: column;
+align-items: center;
+border: 3px solid #333;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* Increase the font size for accessibility */
+input{
+  font: 400 20px system-ui; 
+  width: 50%;
+  padding: 2px 0;
+}
+fieldset{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+   margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+  align-items: center;
+}
+legend{
+  font-size: 1.7em;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 5px;
+}
+label {
+  text-align: left;
+  padding: 25px 0 15px 0;
+}
+select {
+font: 400 20px system-ui; 
+ width: 50%;
+  padding: 2px 0;  
+}
+input[type=submit]{
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+     align-items: center;
+}
+footer p {
+  color: #333; 
+  padding: 30px; 
+  background: rgb(245,94,216);
+  background: linear-gradient(90deg, rgba(245,94,216,1) 0%, rgba(233,45,199,1) 16%, rgba(221,15,184,1) 31%, rgba(195,12,164,1) 47%, rgba(204,16,159,1) 62%, rgba(175,7,119,1) 80%, rgba(148,11,102,1) 94%);
+}
